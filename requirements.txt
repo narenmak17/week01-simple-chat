@@ -1,0 +1,12 @@
+# core — always needed
+transformers>=4.38.0
+torch>=2.1.0
+gradio>=4.20.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# optional — only needed if PROVIDER=groq
+# groq>=0.4.0
+
+# optional — Ollama needs no Python package, just the local server
+# install from https://ollama.com/download

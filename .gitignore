@@ -1,0 +1,54 @@
+# --- Private planning & learning docs (not for public repo) ---
+LEARNING_WALKTHROUGH.md
+MODEL_OPTIONS.md
+README_HF.md
+
+# --- Content drafts (publish manually after editing, not raw drafts) ---
+assets/blog_post1_draft.md
+assets/blog_post2_draft.md
+assets/linkedin_posts.md
+
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Environment & secrets (never commit these) ---
+.env
+.env.*
+*.key
+secrets.json
+
+# --- HuggingFace model cache (large binary files, no value in repo) ---
+.cache/
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# --- FAISS index files (generated at runtime, not source code) ---
+*.faiss
+*.index
+faiss_index.bin
+docs.pkl
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/

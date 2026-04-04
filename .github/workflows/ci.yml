@@ -1,0 +1,30 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Smoke test — imports and pipeline load
+        run: |
+          python -c "
+          from transformers import pipeline
+          import gradio as gr
+          gen = pipeline('text-generation', model='distilgpt2', device=-1)
+          out = gen('Hello', max_new_tokens=5)[0]['generated_text']
+          assert len(out) > 0, 'Pipeline returned empty output'
+          print('Smoke test passed:', out)
+          "
