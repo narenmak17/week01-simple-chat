@@ -2,11 +2,13 @@
 LEARNING_WALKTHROUGH.md
 MODEL_OPTIONS.md
 README_HF.md
+MasterPlan_AI_ThoughtLeader_2025.md
 
 # --- Content drafts (publish manually after editing, not raw drafts) ---
 assets/blog_post1_draft.md
 assets/blog_post2_draft.md
 assets/linkedin_posts.md
+assets/*
 
 # --- Python ---
 venv/

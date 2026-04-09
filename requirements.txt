@@ -1,5 +1,5 @@
 # core — always needed
-transformers>=4.38.0
+transformers>=4.56.2
 torch>=2.1.0
 gradio>=4.20.0
 requests>=2.31.0
@@ -10,3 +10,6 @@ python-dotenv>=1.0.0
 
 # optional — Ollama needs no Python package, just the local server
 # install from https://ollama.com/download
+
+# dev / test
+pytest>=8.0.0

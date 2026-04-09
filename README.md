@@ -91,6 +91,14 @@ set GROQ_API_KEY=your_key_here
 - No persistent memory between sessions
 - Not production-ready — demo only, see `DISCLAIMER.md`
 
+## Week 2 — Prompt Engineering & Safety
+
+This repository now includes the Week 2 guide for adding prompt guardrails, refusal handling, output validation, rate limiting, and toxicity filtering.
+
+- Follow the step-by-step guide in `WEEK2_PROMPT_ENGINEERING.md`
+- Add safety patterns before you upgrade model quality
+- Share your progress using the GitHub repo and the Week 2 guide link
+
 ## License
 
 MIT
